@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+/* MULTIPLE SELECTORS */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto'; /* added '' tags to text */
+  font-size: 10px;
+  line-height: 3.5em;
+  font-weight: 300;
+}
+h1, h2, h3, h4, h5{
+  font-family: 'Roboto Condensed'; /* added '' tags to text */
+}
+
+h1{
+  font-size: 9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+  color: white; /*white or #ffffff or #fff or rgb(255,255,255)*/
+  text-shadow: #020819 6px -2px 6px; /* Corrected values 8 20 9 */
+  font-size: 5em;
+}
+
+h3{
+  font-size: 4.2em;
+  text-align: center;
+}
+
+h4{
+  font-size: 1.5em;
+  letter-spacing: 0.4px;
+  margin: 15px;
+}
+
+h5{
+  font-size: 1.2em;
+}
+
+footer a{
+  color:rgb(67, 163, 230);
+  text-decoration: none;
+}
+
+.quote{
+  font-size: 2.5em;
+  /*line-height: 1px; This not do nothing here*/
+  position: absolute;
+  left: 10%; /*Not margin-left, left for position absolute*/
+  bottom: 15vh; /*Not margin-bottom, bottom for position absolute*/
+}
+
+.footer{
+  text-align: center;
+  font-size: 1.9em;
+  padding: 0 100px;
+  margin-bottom: 25px;
+
+}
+
+/* CLASS SELECTORS */
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 75px 0;
+  /*height: 200px*/ /* removed height*/
+}
+
+.nav-bar{
+  background-color: rgb(25,33,41);
+  padding-top: 14px;
+  height: 40px;
+  /* this 2 lines added*/
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+/* if .nav-bar-item > a set
+nav-bar-item if contain any a but
+not set a */
+/*all a of nav-bar-item */
+.nav-bar-item a{
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.nav-bar-ul{
+  width:1200px;
+  margin: 0 auto;
+}
+/* This is not used
+.team{
+  width: 60%;
+  margin: 10px auto;
+
+}*/
+.nav-bar-li{
+  list-style-type:none;
+  text-align: center;
+  float: left;
+  width: 33%;
+}
+
+.headerClass{
+  background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  padding-top:50px;
+  /* add */
+  position: relative;
+}
+
+.dark-background{
+  background-color: rgb(25,33,41);
+  color: white;
+}
+
+#general-information .text{ /*added #general-information*/
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link-btn{
+  background-color: rgb(67, 163, 230);
+  color: white;
+  font-family: 'Roboto Condensed';
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  margin: 40px auto 0 auto;
+  padding: 14px 20px 14px 20px;
+  border: 2px solid black 0.2;
+}
+
+.service-box{
+  font-size: 1.7em;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 0 #eee;
+  margin: 50px 5% 0 5%;
+  width: 40%;
+  padding: 20px;
+}
+
+#structure .service-box{
+  font-size: 1.7em;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 0 #eee;
+  margin: 50px 5% 0 5%;
+  width: 40%;
+  padding: 20px;
+}
+
+.service-box .img{ /*instead of .service-box > img*/
+  width: 125px;
+}
+
+.address{
+  font-style: normal;
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+
+.col{
+  float: left;
+}
+
+.col-3{
+  width: 30%;
+}
+/* This not exist
+.col-2{
+  width: 40%;
+  margin-left: 5%;
+}*/
+.col-middle{
+  margin: 0 5%;
+}
+
+.clearfix{
+  clear: both;
+}
+.footer .map-frame{ /*added inside of .footer only*/
+  height: 375px;
+  float: right;
+  width: 60%;
+}
+
+.staffPhoto{
+  height: 250px;
+  width: 100%;
+}
+
+#team .section-text{
+  font-size: 1.9em;
+  text-align: center;
+  /* add */
+  width: 60%;
+  margin: 10px auto;
+}
+
+#team .member-name{
+  display: block; /* added */
+  text-align: center;  /* added  */
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#team hr{ /* added #team for team id only*/
+  margin: 20px auto 30px auto;
+  width: 40%;
+}
+
+#schedule .schedule-table{
+  margin: 0 auto; /* 40 auto removed */
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 30px; /* added 30px margin bottom */
+}
+#schedule th,td{
+  border-bottom: 1px solid;
+  padding: 5px 10px;
+}
+
+.slot-form-container{
+  width: 40%;
+  margin: 18px auto 0 auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+.slot-form label{
+  display: block;
+  margin-bottom: 5px;
+  line-height: 15px;
+}
+.slot-form input,select{
+  height: 20px;
+  outline: none;
+  padding: 3px;
+  width: 100%;
+}
+.slot-form-container button{
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding: 9px;
+  margin-top: 15px;
+}
+
+.follow-us-item{
+  list-style-type: none;
+}
